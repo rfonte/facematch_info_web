@@ -6,3 +6,12 @@
 2025-12-15 21:01:36,152 - INFO - Mounted frontend directory at: D:\OneDrive\Pessoal\Projetos\facematch_info_web\frontend
 2025-12-15 21:01:59,864 - INFO - Received request to analyze image: Imagem do WhatsApp de 2025-12-15 à(s) 20.19.01_6f26e7dd.jpg
 2025-12-15 21:02:28,429 - INFO - Analysis successful for Imagem do WhatsApp de 2025-12-15 à(s) 20.19.01_6f26e7dd.jpg.
+2025-12-15 21:07:46,303 - INFO - Application starting up.
+2025-12-15 21:07:46,305 - INFO - Loaded 0 known faces.
+2025-12-15 21:07:46,307 - INFO - Mounted frontend directory at: D:\OneDrive\Pessoal\Projetos\facematch_info_web\frontend
+2025-12-15 21:16:29,070 - INFO - Received request to analyze image: blob
+2025-12-15 21:17:36,070 - INFO - Received request to analyze image: Imagem do WhatsApp de 2025-12-15 à(s) 20.19.01_6f26e7dd.jpg
+2025-12-15 21:18:53,359 - INFO - Received request to analyze image: WIN_20251215_19_20_17_Pro.jpg
+2025-12-15 21:19:08,906 - INFO - Received request to analyze image: blob
+2025-12-15 21:19:19,618 - INFO - Received request to analyze image: blob
+2025-12-15 21:19:34,501 - INFO - Received request to analyze image: blob
