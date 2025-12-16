@@ -1,6 +1,7 @@
+numpy<2
+tensorflow==2.15.0
+tf-keras
+deepface
+opencv-python
 fastapi
 uvicorn
-python-multipart
-opencv-python
-numpy
-deepface
