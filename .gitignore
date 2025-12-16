@@ -1,2 +1,3 @@
 *.log
 logs/imagens/
+__pycache__
