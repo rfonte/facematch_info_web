@@ -1,8 +1,5 @@
-numpy<2
-tensorflow==2.15.0
-tf-keras
-deepface
-opencv-python
-fastapi
-uvicorn
-httpx>=0.25.0
+deepface==0.0.96
+fastapi==0.124.4
+numpy==2.3.5
+opencv_python==4.8.0.74
+pytest==7.1.2
