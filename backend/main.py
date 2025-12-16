@@ -162,7 +162,9 @@ async def analyze_image(file: UploadFile = File(...)):
 
             img_array = np.frombuffer(image_bytes, np.uint8)
             img = cv2.imdecode(img_array, cv2.IMREAD_COLOR)
-            image_name = f"{datetime.now().strftime('%H-%M-%S')}_{file.filename}"
+            
+            base_name = os.path.splitext(file.filename)[0]  # remove a extensão original, se houver
+            image_name = f"{datetime.now().strftime('%H-%M-%S')}_{base_name}.jpg"
             image_path = os.path.join(save_dir, image_name)
             cv2.imwrite(image_path, img)
 
