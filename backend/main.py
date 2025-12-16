@@ -7,7 +7,7 @@ from datetime import datetime
 from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
-from .face_utils import (
+from backend.face_utils import (
     get_face_encodings,
     save_known_faces,
     load_known_faces,
