@@ -1,0 +1,16 @@
+[
+  "tests/test_drive_upload.py::test_skip_drive_integration",
+  "tests/test_drive_upload.py::test_upload_from_drive_analyze",
+  "tests/test_drive_upload.py::test_upload_from_drive_register",
+  "tests/test_face_utils.py::test_analyze_face_with_invalid_image",
+  "tests/test_face_utils.py::test_analyze_face_with_valid_image",
+  "tests/test_face_utils.py::test_find_matching_faces",
+  "tests/test_face_utils.py::test_get_face_encodings",
+  "tests/test_face_utils.py::test_save_and_load_known_faces",
+  "tests/test_folder_structure.py::test_folder_structure",
+  "tests/test_main.py::test_analyze_image_no_file",
+  "tests/test_main.py::test_clear_faces",
+  "tests/test_main.py::test_register_face_missing_file",
+  "tests/test_main.py::test_root_route",
+  "tests/test_main.py::test_video_feed_route"
+]

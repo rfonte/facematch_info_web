@@ -178,3 +178,6 @@ async def analyze_image(file: UploadFile = File(...)):
     except Exception as e:
         app_logger.error(f"Erro geral ao processar imagem: {e}", exc_info=True)
         return JSONResponse({"error": str(e)}, status_code=500)
+
+
+

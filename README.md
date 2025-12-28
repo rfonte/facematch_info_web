@@ -129,3 +129,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Built with [FastAPI](https://fastapi.tiangolo.com/) for the backend.
 - Uses [DeepFace](https://github.com/serengil/deepface) for face analysis.
 - OpenCV for image processing.
+
+## Note: Google Drive integration reverted
+
+An earlier experiment added a Google Drive upload/Picker integration. That change
+was reverted. The core backend remains focused on direct file uploads and
+camera input. Any temporary Drive-related utilities or tests were disabled or
+removed during the revert.
