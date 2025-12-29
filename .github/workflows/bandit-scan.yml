@@ -1,4 +1,4 @@
-name: Run Bandit Security Scan
+name: Bandit Security Scan
 
 on:
   push:
@@ -9,11 +9,11 @@ on:
 
 jobs:
   bandit:
-    name: Bandit Scan
+    name: Run Bandit
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -27,8 +27,8 @@ jobs:
           pip install -r requirements.txt
           pip install bandit
 
-      - name: Run Bandit
-        run: bandit -r backend/ -f json -o bandit_report.json
+      - name: Run Bandit scan
+        run: bandit -r src/backend -f json -o bandit_report.json
 
       - name: Upload Bandit Report
         uses: actions/upload-artifact@v4
