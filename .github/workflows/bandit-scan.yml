@@ -1,18 +1,19 @@
-name: Python Security Scan with Bandit
+name: Run Bandit Security Scan
 
 on:
   push:
-    branches: [main]
+    branches: ["main"]
   pull_request:
-    branches: [main]
+    branches: ["main"]
+  workflow_dispatch:
 
 jobs:
-  bandit-scan:
-    name: Run Bandit Security Scan
+  bandit:
+    name: Bandit Scan
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -27,11 +28,10 @@ jobs:
           pip install bandit
 
       - name: Run Bandit
-        run: |
-          bandit -r src/ -lll -o bandit_report.txt -f txt
+        run: bandit -r backend/ -f json -o bandit_report.json
 
       - name: Upload Bandit Report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: bandit-report
-          path: bandit_report.txt
+          path: bandit_report.json
