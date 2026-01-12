@@ -1,4 +1,4 @@
-numpy>=1.21,<1.26
+numpy>=1.21,<2.5
 opencv-python>=4.6.0
 deepface==0.0.96
 fastapi==0.124.4
